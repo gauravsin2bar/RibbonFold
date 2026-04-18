@@ -407,7 +407,7 @@ if __name__ == "__main__":
     raw_msa_file = args.input_pkl
     single_msa_data = pickle.load(gzip.open(raw_msa_file))
     processed_feature_file = raw_msa_file.replace('.pkl.gz', '_processed.pkl')
-    prepare_input_pkl_file(single_msa_data, args.ribbon_name, processed_feature_file, num_chains=5)
+    prepare_input_pkl_file(single_msa_data, args.ribbon_name, processed_feature_file, num_chains=10)
 
 
     # run inference
